@@ -6,8 +6,8 @@
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-Scale = 1"/>
     <title>Sass Website</title>
-    <link rel="stylesheet" href="Css/homepage.css" />
-    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Coda&display=swap" rel="stylesheet">
 </head>
