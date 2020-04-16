@@ -1,0 +1,218 @@
+.footer {
+    padding: 20px 0px 0px;
+    background-color: #ececec;
+
+    .posts,
+    .company,
+    .contact {
+        float: $float-left;
+    }
+
+    .posts {
+        @media #{$max-mobile} {
+            width: 100%;
+
+            .post {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media #{$min-small} {
+            width: 100%;
+
+            .post {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media #{$min-medium} {
+            width: 50%;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .post {
+            overflow: hidden;
+
+            img {
+                float: $float-left;
+                width: 90px;
+                margin-right: 15px;
+            }
+
+            .text {
+                float: $float-left;
+                width: calc(100% - 115px);
+
+                h3 {
+                    color: #888;
+                    margin: 0px;
+                }
+
+                p {
+                    color: #a2a2a2;
+                    line-height: 1.3em;
+                    margin: 5px 0px 0px 0px;
+
+                    @media #{$min-large} {
+                        margin: 10px 65px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .company {
+
+        @media #{$max-mobile} {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            h2 {
+                margin-bottom: 5px;
+            }
+
+            li {
+                padding: 5px;
+                font-size: 20px
+            }
+        }
+
+        @media #{$min-small} {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        @media #{$min-medium} {
+            width: 25%;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        ul {
+            line-height: 1.6em;
+            color: #888;
+            margin: 0 0 10px;
+
+            li {
+                span {
+                    color: $redColor;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        h3 {
+            margin: 0;
+            color: #888;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0;
+            color: #a2a2a2;
+        }
+    }
+
+    .contact {
+        @media #{$max-mobile} {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            li {
+                padding: 5px;
+                font-size: 20px
+            }
+        }
+
+        @media #{$min-small} {
+            width: 50%;
+        }
+
+        @media #{$min-medium} {
+            width: 25%;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        textarea {
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 7px;
+            margin-bottom: 5px;
+            color: #75758b;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type='submit'] {
+            width: 110px;
+            height: 35px;
+            border: none;
+            background-color: rgba($redColor, 0.8);
+            color: #fff;
+            border-radius: 5px;
+            @include prefixer(transition, all 0.4s ease-in-out, webkit moz o);
+
+            &:hover {
+                background-color: rgba($redColor, 1);
+            }
+        }
+    }
+
+    .copyright {
+        padding: 20px 0px;
+        border-top: 1px solid #c0c0c0;
+        overflow: hidden;
+        color: #555;
+
+        .copy,
+        .auther {
+            width: 50%;
+            float: $float-left;
+
+            @media #{$max-mobile} {
+                width: 100%;
+                float: none;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            span {
+                color: $redColor;
+                font-weight: bold;
+            }
+        }
+
+        .auther {
+
+            @media #{$min-small} {
+                text-align: right;
+            }
+        }
+
+    }
+}

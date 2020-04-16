@@ -1,0 +1,112 @@
+/*Start Header*/
+.header {
+    background-color: #f9f9f9;
+    padding: 20px 0px;
+    border-bottom: 1px solid $grayColor;
+    overflow: hidden;
+
+    @media #{$max-mobile} {
+        padding: 0px;
+    }
+
+    .logo {
+
+        @media #{$max-mobile} {
+            float: $float-left;
+            width: 50%;
+        }
+
+        @media #{$min-small} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+
+        @media #{$min-medium} {
+            width: 30%;
+            float: $float-left;
+            text-align: left;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            font-size: 1.8em;
+            margin: 10px 0px 0px;
+        }
+
+        p {
+            color: $grayColor;
+            margin-top: 10px;
+        }
+    }
+
+    .collapse {
+        display: none;
+
+        @media #{$max-mobile} {
+            display: block;
+            float: $float-left;
+            width: 50%;
+            text-align: right;
+        }
+
+        i.fa {
+            font-size: 50px;
+            margin-top: 25px;
+            cursor: pointer;
+            color:rgb(226, 73, 66);
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: $redColor;
+        overflow: hidden;
+
+        @media #{$max-mobile} {
+            display: none;
+            width: 100%;
+        }
+
+        @media #{$min-small} {
+            width: 100%;
+            margin-top: 30px;
+            float: none;
+            display: block !important;
+            border-radius: 15px !important;
+        }
+
+        @media #{$min-medium} {
+            width: 70%;
+            margin-top: 1em;
+            float: $float-left;
+        }
+
+        li {
+            width: 20%;
+            float: $float-left;
+            text-align: center;
+            font-size: 18px;
+
+            @media #{$max-mobile} {
+                width: 100%;
+            }
+
+            a {
+                display: block;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 20px;
+                color: $whiteColor;
+
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+/*End Header*/
